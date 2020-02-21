@@ -1,34 +1,149 @@
+$display-color: #a6b7a4;
+$display-text: #222222;
+$display-shadow: #8f9e8d;
+$button-top: #333333;
+$button-active: #222222;
+$button-bottom: #111111;
+$button-hover: #444444;
+$button-text: #ffffff;
+$calc-bg: #f5f5dc;
 *{
     margin: 0;
     padding: 0;
-    // border: 0;
 }
 
 body{
+    font-family: sans-serif;
     display: flex;
+    flex-direction: column;
     height: 100%;
     align-items: center;
     justify-content: center;
+    background-color: $calc-bg;
     .container{
-        width:50%;
+        width: 75%;
+        width: 500px;
+        max-width: 500px;
+        min-width: 500px;
         display: flex;
         flex-direction: column;
-    }
-    input, button{
-        margin: auto;
-        width: auto;
-    }
-    .buttons{
-        display: flex;
-        flex-wrap: wrap;
-        width: 25%;
-        margin: auto;
-        button{
-            padding: 10px;
-            font-size: 50px;
-            border: 0;
-            width: 80px;
+        border: gray solid 1px;
+        padding: 10px;
+        border-radius: 10px;
+        .lable{
+            width: 90%;
+            margin: auto;
+            color: $button-hover;
+            h1{
+                font-size: 25px;
+                sup{
+                    font-size: 20px;
+                }
+            }
         }
+        .display{
+            font-family: 'Press Start 2P', monospace;
+            display: flex;
+            flex-direction: column;
+            background-color: $display-color;
+            border-radius: 10px;
+            width: 90%;
+            margin: auto;
+            box-shadow: inset 3px 3px $display-shadow;
+            border: $display-shadow solid 1px;
+            input[type=text]{
+                font-family: 'Press Start 2P', monospace;
+                border: 0;
+                background: none;
+                padding: 5px;
+                text-align: right;
+                color: $display-text;
+            }
+            .expression, .result{
+                margin: 10px;
+            }
+            .expression{
+                font-size: 16px;
+            }
+            .result{
+                font-size: 32px;
+                height: 36px;
+                text-align: right;
+                color: $display-text;
+            }
+        }
+        .buttons{
+            margin: 10px auto;
+            width: 90%;
+            align-self: center;
+            display: flex;
+            .btnHouse{
+                margin: 2.2px;
+            }
+            button{
+                font-size: 32px;
+                border: none;
+                padding: 5px;
+                background-color: $button-top;
+                border-radius: 10px;
+                height: 70px;
+                color: $button-text;
+                text-align: center;
+            }
+            .numerical{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 80%;
+                
+                .btnHouse{
+                    display: flex;
+                    width: 32%;
+                    height: 80px;
+                    background-color: $button-bottom;
+                    border-radius: 10px;
+                    button{
+                        width: 100%;
+                        &:hover{
+                            background-color: $button-hover;
+                        }
+                        &:active{
+                            background-color: $button-bottom;
+                            height: 75px;
+                        }
+                    }
+                }
+            }
+            .operation{
+                display: flex;
+                flex-direction: column;
+                width: 20%;
+                .btnHouse{
+                    width: 100%;
+                    height: 80px;
+                    background-color: $button-bottom;
+                    border-radius: 10px;
+                    display: flex;
+                    button{
+                        width: 100%;
+                        height: 70px;
+                        &:hover{
+                            background-color: $button-hover;
+                        }
+                        &:active{
+                            background-color: $button-active;
+                            height: 75px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        height: max-content;
+        padding: 5px;
+        bottom: 0;
+        left: 0;
     }
 }
 

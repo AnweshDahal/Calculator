@@ -4,20 +4,7 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body .container {
-  width: 50%;
+  font-family: sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,27 +12,190 @@ body .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5f5dc;
 }
 
-body input, body button {
+body .container {
+  width: 75%;
+  width: 500px;
+  max-width: 500px;
+  min-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: gray solid 1px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body .container .lable {
+  width: 90%;
   margin: auto;
-  width: auto;
+  color: #444444;
 }
 
-body .buttons {
+body .container .lable h1 {
+  font-size: 25px;
+}
+
+body .container .lable h1 sup {
+  font-size: 20px;
+}
+
+body .container .display {
+  font-family: 'Press Start 2P', monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #a6b7a4;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  -webkit-box-shadow: inset 3px 3px #8f9e8d;
+          box-shadow: inset 3px 3px #8f9e8d;
+  border: #8f9e8d solid 1px;
+}
+
+body .container .display input[type=text] {
+  font-family: 'Press Start 2P', monospace;
+  border: 0;
+  background: none;
+  padding: 5px;
+  text-align: right;
+  color: #222222;
+}
+
+body .container .display .expression, body .container .display .result {
+  margin: 10px;
+}
+
+body .container .display .expression {
+  font-size: 16px;
+}
+
+body .container .display .result {
+  font-size: 32px;
+  height: 36px;
+  text-align: right;
+  color: #222222;
+}
+
+body .container .buttons {
+  margin: 10px auto;
+  width: 90%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .buttons .btnHouse {
+  margin: 2.2px;
+}
+
+body .container .buttons button {
+  font-size: 32px;
+  border: none;
+  padding: 5px;
+  background-color: #333333;
+  border-radius: 10px;
+  height: 70px;
+  color: #ffffff;
+  text-align: center;
+}
+
+body .container .buttons .numerical {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 25%;
-  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
 }
 
-body .buttons button {
-  padding: 10px;
-  font-size: 50px;
-  border: 0;
-  width: 80px;
+body .container .buttons .numerical .btnHouse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32%;
+  height: 80px;
+  background-color: #111111;
+  border-radius: 10px;
+}
+
+body .container .buttons .numerical .btnHouse button {
+  width: 100%;
+}
+
+body .container .buttons .numerical .btnHouse button:hover {
+  background-color: #444444;
+}
+
+body .container .buttons .numerical .btnHouse button:active {
+  background-color: #111111;
+  height: 75px;
+}
+
+body .container .buttons .operation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+}
+
+body .container .buttons .operation .btnHouse {
+  width: 100%;
+  height: 80px;
+  background-color: #111111;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .buttons .operation .btnHouse button {
+  width: 100%;
+  height: 70px;
+}
+
+body .container .buttons .operation .btnHouse button:hover {
+  background-color: #444444;
+}
+
+body .container .buttons .operation .btnHouse button:active {
+  background-color: #222222;
+  height: 75px;
+}
+
+body footer {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 5px;
+  bottom: 0;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
