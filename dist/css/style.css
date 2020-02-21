@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body input, body button {
+  margin: auto;
+  width: auto;
+}
+
+body .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 25%;
+  margin: auto;
+}
+
+body .buttons button {
+  padding: 10px;
+  font-size: 50px;
+  border: 0;
+  width: 80px;
+}
+/*# sourceMappingURL=style.css.map */
