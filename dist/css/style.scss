@@ -30,15 +30,22 @@ body{
         border: gray solid 1px;
         padding: 10px;
         border-radius: 10px;
+        box-shadow: 5px 5px gray;
         .lable{
+            justify-self: left;
             width: 90%;
             margin: auto;
             color: $button-hover;
+            padding-bottom: 5px;
+            
+            margin-bottom: 10px;
             h1{
+                width: max-content;
                 font-size: 25px;
                 sup{
                     font-size: 20px;
                 }
+                border-bottom: #c43f36 solid 5px;
             }
         }
         .display{
@@ -64,12 +71,16 @@ body{
             }
             .expression{
                 font-size: 16px;
+                caret-color: transparent;
+                cursor: default;
             }
             .result{
                 font-size: 32px;
                 height: 36px;
                 text-align: right;
                 color: $display-text;
+                caret-color: transparent;
+                cursor: default;
             }
         }
         .buttons{
@@ -108,7 +119,7 @@ body{
                             background-color: $button-hover;
                         }
                         &:active{
-                            background-color: $button-bottom;
+                            background-color: $button-top;
                             height: 75px;
                         }
                     }
@@ -131,7 +142,7 @@ body{
                             background-color: $button-hover;
                         }
                         &:active{
-                            background-color: $button-active;
+                            background-color: $button-top;
                             height: 75px;
                         }
                     }
@@ -140,6 +151,7 @@ body{
         }
     }
     footer{
+        margin-top: 25px;
         height: max-content;
         padding: 5px;
         bottom: 0;

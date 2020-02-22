@@ -11,9 +11,9 @@
         <div class="lable">
             <h1>CALC<sup> PP420+</sup></h1>
         </div>
-        <div class="display">
-            <input type="text" id="expression" class="expression">
-            <input type="text" id="result" class="result" value="0" width="10" disabled>
+        <div class="display" onclick="focusExp()">
+            <input type="text" id="expression" class="expression" autofocus>
+            <input type="text" id="result" class="result" value="0" width="10" contenteditable="false">
         </div>
         <div class="buttons">
             <div class="numerical">
@@ -45,13 +45,13 @@
                     <button class="btn" value="9" onclick="buttonClick(this)">9</button>
                 </div>
                 <div class="btnHouse">
-                    <button class="btn" value="cls" onclick="buttonClick(this)">CLS</button>
+                    <button class="btn" value="cls" onclick="buttonClick(this)" id="cls">C</button>
                 </div>
                 <div class="btnHouse">
                     <button class="btn" value="0" onclick="buttonClick(this)">0</button>
                 </div>
                 <div class="btnHouse">
-                    <button class="btn" value="ans" onclick="buttonClick(this)">ANS</button>
+                    <button class="btn" value="ans" onclick="buttonClick(this)" id="ans">=</button>
                 </div>
             </div>
             <div class="operation">

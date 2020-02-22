@@ -37,16 +37,26 @@ body .container {
   border: gray solid 1px;
   padding: 10px;
   border-radius: 10px;
+  -webkit-box-shadow: 5px 5px gray;
+          box-shadow: 5px 5px gray;
 }
 
 body .container .lable {
+  -ms-grid-column-align: left;
+      justify-self: left;
   width: 90%;
   margin: auto;
   color: #444444;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 body .container .lable h1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-size: 25px;
+  border-bottom: #c43f36 solid 5px;
 }
 
 body .container .lable h1 sup {
@@ -86,6 +96,8 @@ body .container .display .expression, body .container .display .result {
 
 body .container .display .expression {
   font-size: 16px;
+  caret-color: transparent;
+  cursor: default;
 }
 
 body .container .display .result {
@@ -93,6 +105,8 @@ body .container .display .result {
   height: 36px;
   text-align: right;
   color: #222222;
+  caret-color: transparent;
+  cursor: default;
 }
 
 body .container .buttons {
@@ -151,7 +165,7 @@ body .container .buttons .numerical .btnHouse button:hover {
 }
 
 body .container .buttons .numerical .btnHouse button:active {
-  background-color: #111111;
+  background-color: #333333;
   height: 75px;
 }
 
@@ -186,11 +200,12 @@ body .container .buttons .operation .btnHouse button:hover {
 }
 
 body .container .buttons .operation .btnHouse button:active {
-  background-color: #222222;
+  background-color: #333333;
   height: 75px;
 }
 
 body footer {
+  margin-top: 25px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
